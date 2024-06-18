@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --BGCOLOR: hsl(0, 0%, 100%);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    color: hsl(30, 10%, 34%);
+}
+
+.container{
+    background-color: var(--BGCOLOR);
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+img{
+    max-width: 100%;
+}
+.contant{
+    margin: 1rem;
+    padding: 1rem;
+    font-family: "Outfit", sans-serif;
+    display: grid;
+    gap: 2rem;
+
+} 
+
+h1 , h2 {
+    font-family: "Young Serif", serif;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+}
+h2 , .level {
+    color: hsl(14, 45%, 36%);
+}
+h3{
+    color: hsl(332, 51%, 32%);
+}
+.preparation{
+    background-color: hsl(330, 100%, 98%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+span{
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+}
+
+.preparation ul {
+    padding-left: 1.5rem;
+}
+
+.preparation ul li {
+    margin-top: 1rem;
+}
+
+.ingredients ul{
+    padding-left: 1.5rem;
+}
+
+.instructions ol{
+    padding-left: 1.5rem;
+}
+
+ol li::marker , li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.preparation ul li::marker{
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+.nutrition .value{
+    padding: 1rem 2rem;
+    display: flex;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+
+}
+
+.nutrition .value:last-child{
+    border-bottom: 0;
+}
+
+.nutrition .value > * {
+    width: 100%;
+    margin-right: auto;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+ 
+h2{
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 540px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        margin: 3rem;
+        max-width: 700px;
+        border-radius: 1rem;
+        }
+
+    .recipe-img{
+        padding: 2rem 2rem 0 2rem;
+        border-radius: 1rem;}
+    img{
+        border-radius: 1rem;
+    }    
+}
